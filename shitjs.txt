@@ -1,0 +1,29 @@
+// const cells = document.querySelectorAll('.cell');
+// const resetBtn = document.getElementById('reset-btn');
+// this is cells array
+const grid  = document.querySelector('.grid')
+for(let i=0;i<6;i++)
+{
+    for(let j=0;j<7;j++)
+    {
+        const cell = document.createElement('div')
+        cell.classList.add('cell')
+        cell.dataset.i=i
+        cell.dataset.j=j
+        grid.appendChild(cell)
+    }
+}
+
+// says the guy who did not do anything in his BTECH
+let currentplayer = "red";
+grid.addEventListener('click',(event)=>{
+    if(!event.target.classList.contains('cell'))return;
+
+    const col = event.target.dataset.j
+    for(let i=5;i>=0;i--)
+    {
+        const cell = document.querySelector(`/cell`)
+    }
+})
+
+creating cells in javascript sucks !!!

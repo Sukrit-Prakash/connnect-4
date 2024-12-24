@@ -1,0 +1,44 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns, each of equal size */
+    grid-template-rows: repeat(6, 1fr);   /* 6 rows, each of equal size */
+    gap: 4px; /* Adds spacing between cells */
+    width: 350px; /* Adjust as needed for your layout */
+    height: 300px; /* Adjust as needed for your layout */
+    background-color: #007bff; /* Blue background like Connect 4 board */
+    border: 5px solid #004080; /* Darker blue border for the board */
+    border-radius: 10px; /* Rounded corners for the grid */
+    padding: 10px; 
+    box-sizing: border-box; /* Includes padding and border in width/height */
+  }
+.cell{
+  width: 100%;
+  height: 100%;
+  background-color: white; 
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5); 
+}
+button {
+  padding: 10px 20px;
+  background-color:gray;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.cell.red {
+  background-color: red; /* Red piece */
+}
+
+.cell.yellow {
+  background-color: yellow; /* Yellow piece */
+}
